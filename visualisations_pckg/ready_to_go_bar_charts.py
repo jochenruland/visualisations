@@ -18,5 +18,15 @@ class Customcountplot(sb.countplot):
         self.x_lab = x_lab
         self.y_lab = y_lab
         self.tit = tit
+        self.data = pd.series()
 
-    
+def read_data_file(self, filename):
+    ''' Function to read in data from a .csv file. The file should have a
+        categorical value and a quantitative value per line separated by comma.
+
+        Args:
+            filname (string): name of file to read from
+        Returns:
+            None '''
+    s = pd.read_csv(filename)
+    self.data = s        
