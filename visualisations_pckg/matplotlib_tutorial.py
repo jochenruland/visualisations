@@ -74,4 +74,7 @@ ax1.axvline(0.65)
 ax3.scatter(np.linspace(0,1,5),np.linspace(0,5,5))
 plt.show()
 
+# Delete `ax3`
+#fig.delaxes(ax3)
+
 #-------------------------------------------
