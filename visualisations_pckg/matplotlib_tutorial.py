@@ -78,3 +78,20 @@ plt.show()
 #fig.delaxes(ax3)
 
 #-------------------------------------------
+# The following code is my own code and has not been forked from the Tutorial by Benjamin Root
+# Create a Custom Figure class
+class Customplot(Figure):
+    """A countplot with axis lables and title"""
+    def __init__(self, *args, cat_order_list, x_label='category', y_label='counts', ctitle='countplot' , **kwargs):
+        super().__init__(*args, **kwargs)
+        ax = self.add_subplot(1,1,1)
+
+        ax.set_xlabel(x_label)
+        ax.set_ylabel(y_label)
+        ax.set_title(ctitle)
+        ax.plot([1, 2, 3, 4], [10, 20, 25, 30], color='lightblue', linewidth=3, label='lightblue')
+        ax.plot([1, 2, 3, 4], [12, 22, 27, 30], color='red', linewidth=3, label='red')
+        ax.legend()
+
+fig=plt.figure(FigureClass=Customcountplot,)
+plt.show()
