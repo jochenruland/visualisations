@@ -1,4 +1,3 @@
-from ready_to_go_bar_charts import *
 import pandas as pd
 
 def read_data_file(filename):
@@ -15,4 +14,4 @@ def read_data_file(filename):
 b_chart = Customcountplot()
 d_series = read_data_file('datafile.csv')
 
-b_chart(data=d_series)
+plt.show(b_chart)
