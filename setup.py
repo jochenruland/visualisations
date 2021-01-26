@@ -15,13 +15,13 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 setup(
     name='visualisations_pckg',  # Required
     version='0.1',  # Required
-    description='A visualisation package for bar charts and histograms',  # Optional
+    description='A visualisation package for customized countplots',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
     #url='https://github.com/pypa/sampleproject',  # Optional
     author='Jochen Ruland',  # Optional
     author_email='jochenhgruland@gmail.com',  # Optional
-    keywords='visualisation', 'bar chart', 'histogram'  # Optional
-    packages=['visualisation_pckg'],  # Required
+    keywords='bar chart',  # Optional
+    packages=['visualisations_pckg'],  # Required
     zip_safe = False
 )
