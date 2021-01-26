@@ -1,17 +1,8 @@
-import pandas as pd
+from ready_to_go_bar_charts import Customplotdata
+import matplotlib.pyplot as plt
 
-def read_data_file(filename):
-    ''' Function to read in data from a .csv file. The file should have a
-        categorical value and a quantitative value per line separated by comma.
-
-        Args:
-            filname (string): name of file to read from
-        Returns:
-            None '''
-    s = pd.read_csv(filename)
-    return s
-
-b_chart = Customcountplot()
-d_series = read_data_file('datafile.csv')
-
-plt.show(b_chart)
+cpd=Customplotdata()
+cpd.read_dataframe_fom_file('fuel-econ.csv')
+cpd.print_dtypes()
+cpd.customcountplot(x='make', hue='feScore')
+plt.show()
