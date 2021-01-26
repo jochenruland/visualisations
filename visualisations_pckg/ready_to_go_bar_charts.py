@@ -48,10 +48,3 @@ class Customplotdata():
         plt.xlabel(self.x_label)
         plt.ylabel(self.y_label)
         plt.xticks(rotation=45)
-
-
-#cpd=Customplotdata()
-#cpd.read_dataframe_fom_file('fuel-econ.csv')
-#cpd.print_dtypes()
-#cpd.customcountplot(x='make', hue='feScore')
-#plt.show()
