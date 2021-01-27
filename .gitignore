@@ -1,6 +1,8 @@
-tesbnt_env
+test_env
 test_env/*.*
 *.pyc
 pokemon.csv
 diamonds.csv
 fuel-econ.csv
+dist
+visualisations_pckg.egg-info
